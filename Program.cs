@@ -10,7 +10,7 @@ namespace GB_02_01
         {
             do
             {
-            NewCycle:
+           // NewCycle:
                 int d = 0;
                 int i = 2;
 
@@ -24,11 +24,15 @@ namespace GB_02_01
                     catch (Exception)
                     {
 
-                        Console.WriteLine("Введите число!");
-                        goto NewCycle;
+                        //Console.WriteLine("Введите число!");
+                        //goto NewCycle;
                     }
                     if (num <= 0)
-                        Console.WriteLine("Введите положительное число!");
+                    {
+                        Console.WriteLine("Введите положительное целое число!");
+                        Console.WriteLine("Нажмите на 'q' и 'enter'для выхода из цикла:");
+                    }
+                        
                 } while (num <= 0);
 
                 while (i < num)
@@ -45,7 +49,7 @@ namespace GB_02_01
                 else
                     Console.WriteLine($"{num} -число составное ");
 
-                Console.WriteLine("Нажмите на 'q' для выхода из цикла:");
+                Console.WriteLine("Нажмите на 'q' и 'enter'для выхода из цикла:");
 
                 q = Console.ReadLine();
             } while (q != "q");
