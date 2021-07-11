@@ -16,7 +16,7 @@ namespace GB_02_01
 
                 do
                 {
-                    Console.WriteLine("Введите число на проверку, простое оно или составное: ");
+                    Console.WriteLine("Введите число для проверки, простое оно или составное: ");
                     try
                     {
                         num = int.Parse(Console.ReadLine());
